@@ -1,0 +1,85 @@
+<!--
+	Author: W3layouts
+	Author URL: http://w3layouts.com
+-->
+<!DOCTYPE html>
+<html lang="zxx">
+
+<!-- Head -->
+<head>
+
+    <title>Acesso Rede IFSC</title>
+
+    <!-- Meta-Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- style CSS -->
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css" media="all">
+
+    <!-- google fonts -->
+    <!--link href="//fonts.googleapis.com/css?family=Mukta:300,400,500" rel="stylesheet">
+
+</head>
+<!-- //Head -->
+
+<!-- Body -->
+<body>
+
+    <section class="main">
+
+        <div class="bottom-grid">
+            <div class="logo">
+                <!-- <h1> <a href="index.html"> Acesso IFSC Campus Tubarão</a></h1> -->
+                <img src="images/ifsc_tubarao_logo250p.png" width=""/>
+
+            </div>
+        </div>
+        <div class="content-w3ls">
+            <div class="content-bottom">
+                <form action="$PORTAL_ACTION$" method="post">
+                    <div class="field-group">
+                        <span class="fa fa-user" aria-hidden="true"></span>
+                        <div class="wthree-field">
+                            <input name="auth_user" id="text1" type="text" value="" placeholder="Usuário" required>
+                        </div>
+                    </div>
+                    <div class="field-group">
+                        <span class="fa fa-lock" aria-hidden="true"></span>
+                        <div class="wthree-field">
+                            tura d        <input name="auth_pass" id="myInput" type="password" placeholder="Senha">
+                        </div>
+                    </div>
+                    <input type="button" value="Leias regras" class="btn" onclick="mostraTermos()">Ler termos de uso</input>
+                    <div class="termos">
+                        <p id="termos" style="display: none;">
+                            Esta é uma rede exclusiva para visitantes. Solicite seu usuário e senha na recepção ou com o suporte técnico local.
+                            Servidores do IFSC devem usar a rede IFSC-ADM com suas credenciais da Intranet. Alunos do IFSC devem usar a rede IFSC-ALUNOS com suas credenciais do Portal do Aluno.
+                        </p>
+                    </div>
+
+                    <div class="wthree-field">
+                        <button class="btn" name="accept" type="submit" value="Continue">Aceitar e Conectar</button>
+                    </div>
+                    <ul class="list-login">
+                </form>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>© 2023 Captive Portal. Coordenadoria de Tecnologia da Informação </p>
+        </div>
+    </section>
+    <script>
+        function mostraTermos() {
+          document.getElementById("termos").style.display = "block"
+        }
+    </script>
+        
+</body>
+<!-- //Body -->
+
+</html>
